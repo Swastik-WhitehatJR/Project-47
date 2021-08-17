@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Biliards</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://pngimg.com/uploads/billiard/billiard_PNG84984.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="start-screen" class="morph">
+    <div id="start-screen-content" class="morph">
+      <h1>Car Biliards</h1>
+      <div class="flexcontainer">
+        <br><br><br><hr><hr><hr>
+        <h2>Instructions</h2>
+        <div class="row">
+          <div class="instructions">Play pool by knocking billiard balls into pockets by hitting them with your car
+          </div>
+          <div class="instructions">
+            <img
+              src="https://pngimg.com/uploads/billiard/billiard_PNG84965.png"
+              height="100" width="94">
+          </div>
+        </div>
+        <div class="row">
+          <div class="instructions">
+            <img src="https://th.bing.com/th/id/R.b0cdf65a450c2dc87347d387be41e5e1?rik=UR7LjDXuQTsl7w&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f7%2fBilliard-Balls-PNG-HD.png&ehk=7AHpqsyqgLz%2fkaLtghZNZ3pw%2fUuoUryltCIaBWiS5as%3d&risl=&pid=ImgRaw&r=0"
+              height="89" width="148">
+          </div>
+          <div class="instructions">Knock in all of the striped balls before the computer player knocks in all of the
+            solids</div>
+        </div>
+        <div class="row">
+          <div class="instructions">Use the arrow keys to drive the car and use the spacebar to boost</div>
+          <div class="instructions">
+            <img src="https://th.bing.com/th/id/R.7eb3034a5aa153f6a9937b2df3ee7905?rik=QtwXyyt4dt10gA&riu=http%3a%2f%2fclipart-library.com%2fimg1%2f1670503.png&ehk=3sNI93lfFQobhPD%2fSezL8YRhQBXempgmgyim4%2fwYT1A%3d&risl=&pid=ImgRaw&r=0" height="60"
+              width="92">
+          </div>
+        </div>
+        <div class="row">
+          <div class="instructions">
+            <img
+              src="https://th.bing.com/th/id/R.ba05bfb23b990b017e800080627c9ab7?rik=bhRt1N5tCmRlvA&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f3%2f8-Ball-Pool-Transparent-PNG.png&ehk=QDO5u1Oy5ei85j%2fB%2b2paFbQUjnvbxQLGiCKhYxrYseY%3d&risl=&pid=ImgRaw&r=0"
+              height="70" width="140">
+          </div>
+          <div class="instructions">Avoid hitting the <strong>8 Ball</strong> or your car will be disabled for 8
+            seconds!</div>
+        </div>
+      </div>
+      <hr>
+      <hr>
+      <hr>
+      <h2>Settings</h2>
+        <input type="text" placeholder="Your Name" id="playerName" class="morph"></input>
+        <input type="text" placeholder="Enemy Name" id="enemyName" class="morph"></input>
+        
+        <select name="Player MODE" id="mode" class="morph">
+          <option value="Not_Selected">MODE</option>
+          <option value="Normal">Normal</option>
+          <option value="Shake">Shake</option>
+        </select>
+
+        <select name="Car Colour" id="carColour" class="morph">
+          <option value="Not_Selected">Car Colour</option>
+          <option value="red">Red</option>
+          <option value="dimRed">Dim Red</option>
+          <option value="maroon">Maroon</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+          <option value="blue">Blue</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="lightBlack">Light Black</option>
+          <option value="blueGreen">Blue Green</option>
+          <option value="darkBlueGreen">Dark Blue Green</option>
+          <option value="tableWood">Table Wood</option>
+        </select>
+
+        <select name="Play SOUND" id="play_sounds" class="morph">
+          <option value="Not_Selected">Play Sounds</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+      <button id="play" class="play">Play</button>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+  <script src="https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+
+  <script src="colors.js"></script>
+  <script src="wall.js"></script>
+  <script src="bumper.js"></script>
+  <script src="pocket.js"></script>
+  <script src="ball.js"></script>
+  <script src="car.js"></script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>

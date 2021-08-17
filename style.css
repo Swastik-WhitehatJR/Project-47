@@ -1,0 +1,180 @@
+/*FOR THE TITLE*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+/*FOR THE INPUT*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+/*FOR THE PLAY BTN*/
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+/*FOR THE GREETING*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.morph {
+  border: 2px solid transparent;
+  background: linear-gradient(160deg, #f0f1f4 0%, #e4e6eb 100%);
+  box-shadow: -3px -3px 6px 2px #ffffff, 5px 5px 8px 0px rgba(0, 0, 0, 0.17),
+    1px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.1s;
+  display: block
+}
+
+.active,
+.morph:focus {
+  border: 2px solid #fafafa;
+  outline: none;
+  box-shadow: inset -3px -3px 5px 0px #ffffff, -1px -1px 4px 0px #ffffff,
+    inset 5px 5px 10px 0px rgba(0, 0, 0, 0.12),
+    inset 2px 2px 3px 0px rgba(0, 0, 0, 0.07),
+    1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.textboxes {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.playerColour {
+  display: block;
+  margin: 5px;
+}
+
+input,
+select {
+  padding: 1rem;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin: 20px;
+}
+
+canvas,
+.replay-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.replay-button {
+  font-size: 24px;
+  color: #333;
+  width: 200px;
+  height: 80px;
+  background: white;
+  border-radius: 5px;
+  border: none;
+  z-index: 999999999;
+  cursor: pointer;
+}
+
+#start-screen {
+  font-family: arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  z-index: 99999999;
+  background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+}
+
+#start-screen-content {
+  background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%);
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 768px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.row {
+  flex: 1;
+  padding: 10px;
+}
+
+.row:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+.instructions {
+  display: inline-block;
+  width: calc(50% - 20px);
+}
+
+#play {
+  background: #0dba94;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 5px;
+}
+
+.play {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 5px;
+}
+
+div {
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .replay-button {
+    font-size: 16px;
+    height: 60px;
+  }
+}
