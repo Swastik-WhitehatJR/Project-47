@@ -1,5 +1,6 @@
 # ABOUT THE PROJECT
 This contains the files that were edited and coded in the Project 47 in WhitehatJR Pro Course. It has a "Billards Game" Part 2 project. It is coded in javascript using "firebase" and "p5.js". To change the logic, edit the code in the file 'sketch.js' file.
+
 # ABOUT ME
 ![My Image](https://github.com/Swastik-WhitehatJR/Class-23/blob/main/swastik.png)
 
